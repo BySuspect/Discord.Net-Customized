@@ -27,6 +27,7 @@ namespace Discord
             Assert.Throws<ArgumentNullException>(() => TokenUtils.ValidateToken(TokenType.Bearer, token));
             Assert.Throws<ArgumentNullException>(() => TokenUtils.ValidateToken(TokenType.Bot, token));
             Assert.Throws<ArgumentNullException>(() => TokenUtils.ValidateToken(TokenType.Webhook, token));
+            Assert.Throws<ArgumentNullException>(() => TokenUtils.ValidateToken(TokenType.User, token));
         }
 
         /// <summary>

@@ -160,6 +160,9 @@ namespace Discord
                 case TokenType.Webhook:
                     // no validation is performed on Webhook tokens
                     break;
+                case TokenType.User:
+                    // no validation is performed on user tokens
+                    break;
                 case TokenType.Bearer:
                     // no validation is performed on Bearer tokens
                     break;

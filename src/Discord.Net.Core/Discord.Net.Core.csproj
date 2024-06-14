@@ -12,6 +12,7 @@
     <IsAotCompatible>false</IsAotCompatible>
     <IncludeSymbols>true</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <Version>$(VersionPrefix)-$(VersionSuffix)</Version>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
