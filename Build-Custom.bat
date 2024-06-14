@@ -1,10 +1,11 @@
 @echo off
 setlocal enabledelayedexpansion
 
-set /p VERSION_SUFFIX=<Build.txt
+set /p VERSION_SUFFIX=<BuildVersion.txt
 
 set /a NEXT_VERSION_SUFFIX=%VERSION_SUFFIX%+1
-echo %NEXT_VERSION_SUFFIX%>Build.txt
+
+(echo %NEXT_VERSION_SUFFIX%)>BuildVersion.txt
 
 set OUTPUT_DIR=C:/CustomNugets
 
